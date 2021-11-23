@@ -1,0 +1,112 @@
+/* MAIN */
+
+body {
+    background-color: greenyellow;
+    margin:0;
+    overflow-x:hidden;
+    overflow-y:auto;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.content {
+    width:90%;
+    min-height:200vh;
+    margin:0 auto;
+    padding:0.5em;
+    background-color:red;
+    margin-bottom:0.5em;
+    margin-top:0.5em;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/*ROWS AND COLUMNS*/
+
+.col-lg-6 {
+    background-color: green;
+}
+
+
+/*NAV*/
+
+#navbar {
+    width:100%;
+    height:4em;
+}
+
+#menu {
+    border-radius:0 !important;
+    height:4em;
+}
+
+.navbar1 {
+    float:left;
+    overflow-x:hidden;
+}
+
+.navbar2 {
+    float:left;
+    clear: left;
+    overflow-x:hidden;
+}
+
+@media only screen and (max-width:995px){
+    .navbar1 {
+        visibility: hidden;
+    }
+
+    .navbar2 {
+        visibility: visible;
+    }
+}
+
+
+@media only screen and (min-width:995px){
+    .navbar1 {
+        visibility: visible;
+    }
+
+    .navbar2 {
+        visibility: hidden;
+    }
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+}
+
+.dropdowncontent {
+    position:relative;
+    overflow:hidden;
+    display:none;
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdowncontent a {
+    padding:0.5em;
+    text-decoration: none;
+    display:block;
+    left:auto;
+    overflow:hidden;
+    width: 10em;
+}
+
+
+.show {
+    display:block;
+}
+
+.btn-drp {
+    border:solid 0,1px !important;
+    border-color: grey !important;
+    border-radius:0 !important;
+}
