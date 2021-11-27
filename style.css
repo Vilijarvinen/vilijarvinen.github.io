@@ -23,6 +23,7 @@ header {
 
 .content {
     width:fit-content;
+    min-width: 70%;
     max-width: 85%;
     margin:0 auto;
     padding:0.5em;
@@ -30,7 +31,7 @@ header {
     margin-top:0.5em;
     overflow-x:hidden;
     overflow-y:hidden;
-    min-height: 100vh;
+    min-height: 80vh;
     border-radius:10px;
     background-color: rebeccapurple;
     opacity: 85%;
@@ -72,6 +73,13 @@ footer {
         height:35vw;
     }
 }
+
+
+#gmap {
+    width:49vw;
+    height:30vw;
+}
+
 
 /*TEXT*/
 
