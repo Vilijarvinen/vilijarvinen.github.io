@@ -1,41 +1,125 @@
 /* MAIN */
 
 body {
-    background-color: greenyellow;
-    margin:0;
+    background-image:url(images/gmbg.jpg)!important;
+    background-size: 306px 306px;
+    width: 100%;
+    height: 100%;
     overflow-x:hidden;
     overflow-y:auto;
-    min-height: 100vh;
-    min-width: 100vh;
+    font-family:monospace !important;
+}
+
+header {
+    width:100%;
+    height:22vh;
+    background:linear-gradient(rebeccapurple,#c9c0e8);
+    text-align: center;
+}
+
+#headerimg  {
+    height:20vh;
 }
 
 .content {
-    width:90%;
-    min-height:200vh;
+    width:fit-content;
+    max-width: 85%;
     margin:0 auto;
     padding:0.5em;
-    background-color:red;
     margin-bottom:0.5em;
     margin-top:0.5em;
     overflow-x:hidden;
     overflow-y:hidden;
+    min-height: 100vh;
+    border-radius:10px;
+    background-color: rebeccapurple;
+    opacity: 85%;
 }
+
+footer {
+    text-align: center;
+    color: #c9c0e8;
+    opacity: 70%;
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:2em;
+}
+
+.fpimg {
+    box-shadow: 5px 5px purple;
+    border-radius: 30%;
+    margin:15px;
+}
+
+@media only screen and (max-width:991px){
+    .fpimg {
+        width:50vw;
+        height:50vw;
+    }
+}
+
+@media only screen and (min-width:1300px){
+    .fpimg {
+        width:497.5px;
+        height:497.5px;
+    }
+}
+
+@media only screen and (max-width:1300px) and (min-width:991px){
+    .fpimg {
+        width:35vw;
+        height:35vw;
+    }
+}
+
+/*TEXT*/
 
 h1 {
     text-align: center;
+    color: #c9c0e8 !important; 
+    font-weight: bolder !important;
 }
 
+@media screen and (max-width:995px) {
+    h1 {
+        font-size: 5vw !important;
+    }
+    
+}
+
+
+@media screen and (min-width: 995px) {
+    h1 {
+        font-size: 3.10625rem !important;
+    }
+    
+}
+
+p {
+    text-align: center;
+    color: #c9c0e8 !important;
+    padding:5px;
+}
 
 /*ROWS AND COLUMNS*/
 
 .col-lg-6 {
-    background-color: green;
+    text-align: center;
+}
+
+.col-lg-12 {
+    text-align: center;
+}
+
+.taller {
+    min-height:100vh !important;
 }
 
 
 /*NAV*/
 
-#navbar {
+#navbar1, #navbar2, #navbar3 {
     width:100%;
     height:4em;
 }
@@ -43,17 +127,55 @@ h1 {
 #menu {
     border-radius:0 !important;
     height:4em;
+    width: 12em;
+    color:rebeccapurple !important;
+    background-color:#c9c0e8 !important;
+    border:none !important;
+    box-shadow: none !important;
+    font-weight: bolder !important;
+}
+
+#menu:hover {
+    border:none !important;
+    background-color:#9a6cbd !important;
+    transition: 0.5s;
+}
+
+.navbar3 {
+    position:relative;
+    background-color:#c9c0e8 !important;
 }
 
 .navbar1 {
-    float:left;
-    overflow-x:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    background-color:#c9c0e8 !important;
+    font-weight: bolder !important;
 }
 
 .navbar2 {
-    float:left;
-    clear: left;
-    overflow-x:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    background-color:#c9c0e8 !important;
+}
+
+.nav-link {
+    height: 4em;
+    width: 12em;
+    text-align: center;
+    padding-top: 1.1em !important;
+    color:rebeccapurple !important;
+}
+
+.nav-link:hover {
+    display:block;
+    background-color: #9a6cbd;
+    height: 4em;
+    transition: 0.5s;
 }
 
 @media only screen and (max-width:995px){
@@ -66,7 +188,6 @@ h1 {
     }
 }
 
-
 @media only screen and (min-width:995px){
     .navbar1 {
         visibility: visible;
@@ -77,18 +198,13 @@ h1 {
     }
 }
 
-.dropdown {
-    position:relative;
-    display:inline-block;
-}
-
 .dropdowncontent {
-    position:relative;
+    position:absolute;
     overflow:hidden;
     display:none;
     z-index: 1;
     text-align: center;
-    text-decoration: none;
+    border:none !important;
 }
 
 .dropdowncontent a {
@@ -97,16 +213,24 @@ h1 {
     display:block;
     left:auto;
     overflow:hidden;
-    width: 10em;
+    width: 12em;
 }
 
+.dropdowncontent a:hover {
+    background-color: #9a6cbd !important;
+    transition: 0.5s !important;
+}
 
 .show {
     display:block;
 }
 
 .btn-drp {
-    border:solid 0,1px !important;
-    border-color: grey !important;
     border-radius:0 !important;
+    color:rebeccapurple !important;
+    background-color:#c9c0e8 !important;
+    border:none !important;
+    font-weight: bolder !important;
+    height: 4em;
+    padding-top: 1.1em !important;
 }
